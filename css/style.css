@@ -354,7 +354,36 @@ a:link {
     width: 100%;
     border-radius: 15px;
 }
-.eight_ten {}
+/*SUBGRID*/
+.eight_ten {
+    grid-column: 8;
+    grid-row: 10;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 100%;
+}
+.eight_ten_sub_one {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    width: 100%
+}
+.eight_ten_sub_two {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    align-self: flex-end;
+}
+.eight_ten_sub_three {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    align-self: flex-end;
+}
+
+/*SUBGRID END*/
 .eight_eleven {}
 .eight_twelve {}
 .eight_thirteen {}
