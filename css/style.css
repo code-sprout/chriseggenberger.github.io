@@ -3,16 +3,6 @@
 
 
 /*PAGE SETUP-------------------------*/
-@media only screen and (max-width: 1250px) {
-    html {
-        margin: 0;
-        padding: 0;
-        width: 4670px;
-        height: 4670px;
-        zoom 50%;
-    }
-}
-
 html {
     margin: 0;
     padding: 0;
