@@ -4,6 +4,10 @@
 
 /*PAGE SETUP-------------------------*/
 html {
+    margin: 0 0 0 0;
+}
+
+body {
     width: 4670px;
     height: 4670px;
 }
