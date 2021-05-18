@@ -3,12 +3,17 @@
 
 
 /*PAGE SETUP-------------------------*/
-html, body {
+html {
     margin: 0;
     padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body {
     width: 4670px;
     height: 4670px;
-    overflow: hidden;
 }
 
 
