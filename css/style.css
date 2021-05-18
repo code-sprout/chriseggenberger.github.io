@@ -1,0 +1,308 @@
+/*IMPORTS----------------------------*/
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+
+
+/*PAGE SETUP-------------------------*/
+html {
+    width: 4670px;
+    height: 4670px;
+}
+
+
+/*STYLING----------------------------*/
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+
+/*HOME BUTTON-------------------------*/
+.fixed {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 900;
+}
+
+.home {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 1vw;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 2vw;
+    color: white;
+    box-shadow: 0 0 .75vw gray;
+    font-size: 2em;
+}
+
+
+/*MAIN GRID FORMATTING---------------*/
+.main-grid {
+    display: grid;
+    grid-template-columns: repeat(13, 350px);
+    grid-template-rows: repeat(13, 350px);
+    column-gap: 10px;
+    row-gap: 10px;
+}
+
+
+/*GRID FORMATTING--------------------*/
+.one_one {}
+.one_two {}
+.one_three {}
+.one_four {}
+.one_five {}
+.one_six {}
+.one_seven {}
+.one_eight {}
+.one_nine {}
+.one_ten {}
+.one_eleven {}
+.one_twelve {}
+.one_thirteen {}
+
+
+.two_one {}
+.two_two {}
+.two_three {}
+.two_four {}
+.two_five {}
+.two_six {}
+.two_seven {}
+/*SUBGRID*/
+.two_seven_three {
+    grid-column: 2 / span 2;
+    grid-row: 7;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.two_seven_three_sub_one {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+}
+.two_seven_three_sub_two {
+    grid-column: 2 / span 2;
+    grid-row: 1 / span 2;
+    width: 100%;
+}
+.two_seven_three_sub_three {
+    grid-column: 4;
+    grid-row: 1;
+    width: 100%
+}
+.two_seven_three_sub_four {
+    grid-column: 4;
+    grid-row: 2;
+    width: 100%;
+}
+/*SUBGRID END*/
+.two_eight {}
+.two_nine {}
+.two_ten {}
+.two_eleven {}
+.two_twelve {}
+.two_thirteen {}
+
+
+.three_one {}
+.three_two {}
+.three_three {}
+.three_four {}
+.three_five {}
+.three_six {
+    grid-column: 3;
+    grid-row: 6;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.three_eight {}
+.three_nine {}
+.three_ten {}
+.three_eleven {}
+.three_twelve {}
+.three_thirteen {}
+
+
+.four_one {}
+.four_two {}
+.four_three {}
+.four_four {}
+.four_five {}
+.four_six {
+    grid-column: 4;
+    grid-row: 6;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.four_seven {}
+.four_eight {}
+.four_nine {}
+.four_ten {}
+.four_eleven {}
+.four_twelve {}
+.four_thirteen {}
+
+
+.five_one {}
+.five_two {}
+.five_three {}
+.five_four {}
+.five_five {}
+.five_six {
+    grid-column: 5;
+    grid-row: 6;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.five_seven {}
+.five_eight {}
+.five_nine {}
+.five_ten {}
+.five_eleven {}
+.five_twelve {}
+.five_thirteen {}
+
+
+.six_one {}
+.six_two {}
+.six_three {}
+.six_four {}
+.six_five {}
+.six_six {}
+.six_seven {}
+.six_eight {}
+.six_nine {}
+.six_ten {}
+.six_eleven {}
+.six_twelve {}
+.six_thirteen {}
+
+
+.seven_one {}
+.seven_two {}
+.seven_three {}
+.seven_four_five {
+    grid-column: 4 / span 2;
+    grid-row: 7;
+    width: 100%;
+    height: auto;
+}
+.seven_six {}
+.center {
+    grid-column: 7;
+    grid-row: 7;
+    width: 100%;
+    height: 100%;
+    background-color: lightblue;
+    border-radius: 25px;
+}
+.seven_eight {}
+.seven_nine {}
+.seven_ten {}
+.seven_eleven {}
+.seven_twelve {}
+.seven_thirteen {}
+
+
+.eight_one {}
+.eight_two {}
+.eight_three {}
+.eight_four {}
+.eight_five {}
+.eight_six {}
+.eight_seven {}
+.eight_eight {}
+.eight_nine {}
+.eight_ten {}
+.eight_eleven {}
+.eight_twelve {}
+.eight_thirteen {}
+
+
+.nine_one {}
+.nine_two {}
+.nine_three {}
+.nine_four {}
+.nine_five {}
+.nine_six {}
+.nine_seven {}
+.nine_eight {}
+.nine_nine {}
+.nine_ten {}
+.nine_eleven {}
+.nine_twelve {}
+.nine_thirteen {}
+
+
+.ten_one {}
+.ten_two {}
+.ten_three {}
+.ten_four {}
+.ten_five {}
+.ten_six {}
+.ten_seven {}
+.ten_eight {}
+.ten_nine {}
+.ten_ten {}
+.ten_eleven {}
+.ten_twelve {}
+.ten_thirteen {}
+
+
+.eleven_one {}
+.eleven_two {}
+.eleven_three {}
+.eleven_four {}
+.eleven_five {}
+.eleven_six {}
+.eleven_seven {}
+.eleven_eight {}
+.eleven_nine {}
+.eleven_ten {}
+.eleven_eleven {}
+.eleven_twelve {}
+.eleven_thirteen {}
+
+
+.twelve_one {}
+.twelve_two {}
+.twelve_three {}
+.twelve_four {}
+.twelve_five {}
+.twelve_six {}
+.twelve_seven {}
+.twelve_eight {}
+.twelve_nine {}
+.twelve_ten {}
+.twelve_eleven {}
+.twelve_twelve {}
+.twelve_thirteen {}
+
+
+.thirteen_one {}
+.thirteen_two {}
+.thirteen_three {}
+.thirteen_four {}
+.thirteen_five {}
+.thirteen_six {}
+.thirteen_seven {}
+.thirteen_eight {}
+.thirteen_nine {}
+.thirteen_ten {}
+.thirteen_eleven {}
+.thirteen_twelve {}
+.thirteen_thirteen {}
