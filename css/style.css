@@ -20,43 +20,25 @@ a:link {
 
 /*HOME BUTTON-------------------------*/
 
-/*
-@media only screen and (min-width: 1000px) {
-   .fixed {
-        height: 100vh;
-        width: 100vw;
-        position: fixed;
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        font-family: 'Source Code Pro', monospace;
-        font-weight: 900;
-    }
-
+@media only screen and (max-width: 1250px) {
     .home {
-        width: 45px;
-        height: 45px;
-        border-radius: 5px;
+        width: 60px;
+        height: 60px;
+        border-radius: 10px;
         background-color: lightgreen;
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-right: 25px;
+        margin-left: 25px;
+        margin-top: 25px;
         color: white;
-        box-shadow: 0 0 .75vw gray;
-        font-size: 2em;
+        box-shadow: 0 0 8px gray;
+        font-size: 40px;
+        position: fixed;
+        font-family: 'Source Code Pro', monospace;
     } 
 }
-*/
 
-.fixed {
-    height: 100vh;
-    width: 100vw;
-    position: fixed;
-    display: flex;
-    font-family: 'Source Code Pro', monospace;
-    font-weight: 900;
-}
 
 .home {
     width: 60px;
@@ -71,6 +53,8 @@ a:link {
     color: white;
     box-shadow: 0 0 8px gray;
     font-size: 40px;
+    position: fixed;
+    font-family: 'Source Code Pro', monospace;
 } 
 
 
