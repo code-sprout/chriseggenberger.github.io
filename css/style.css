@@ -1,13 +1,24 @@
 /*IMPORTS----------------------------*/
 @import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
 
+/*VARIABLES-------------------------*/
+:root {
+    --small-screen: 200px;
+    --medium-screen: 350px;
+    --large-screen: 500px;
+}
 
 /*PAGE SETUP-------------------------*/
 html {
-    margin: 0;
-    padding: 0;
     width: 4670px;
     height: 4670px;
+}
+
+@media only screen and (max-width: 1000px) {
+    html {
+        width: 2720px;
+        height: 2720px;
+    }
 }
 
 
@@ -19,12 +30,28 @@ a:link {
 
 
 /*HOME BUTTON-------------------------*/
+.home {
+    width: 60px;
+    height: 60px;
+    border-radius: 20%;
+    background-color: lightgreen;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25px;
+    margin-top: 25px;
+    color: white;
+    box-shadow: 0 0 8px gray;
+    font-size: 40px;
+    position: fixed;
+    font-family: 'Source Code Pro', monospace;
+} 
 
 @media only screen and (max-width: 1000px) {
     .home {
-        width: 90px;
-        height: 90px;
-        border-radius: 15px;
+        width: 50px;
+        height: 50px;
+        border-radius: 20%;
         background-color: lightgreen;
         display: flex;
         justify-content: center;
@@ -40,31 +67,23 @@ a:link {
 }
 
 
-.home {
-    width: 60px;
-    height: 60px;
-    border-radius: 10px;
-    background-color: lightgreen;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-left: 25px;
-    margin-top: 25px;
-    color: white;
-    box-shadow: 0 0 8px gray;
-    font-size: 40px;
-    position: fixed;
-    font-family: 'Source Code Pro', monospace;
-} 
-
-
 /*MAIN GRID FORMATTING---------------*/
 .main-grid {
     display: grid;
-    grid-template-columns: repeat(13, 350px);
-    grid-template-rows: repeat(13, 350px);
+    grid-template-columns: repeat(13, var(--medium-screen));
+    grid-template-rows: repeat(13, var(--medium-screen));
     column-gap: 10px;
     row-gap: 10px;
+}
+
+@media only screen and (max-width: 1000px) {
+   .main-grid {
+        display: grid;
+        grid-template-columns: repeat(13, var(--small-screen));
+        grid-template-rows: repeat(13, var(--small-screen));
+        column-gap: 10px;
+        row-gap: 10px;
+    }
 }
 
 
