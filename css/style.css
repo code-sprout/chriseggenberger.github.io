@@ -22,9 +22,9 @@ a:link {
 
 @media only screen and (max-width: 1250px) {
     .home {
-        width: 60px;
-        height: 60px;
-        border-radius: 10px;
+        width: 90px;
+        height: 90px;
+        border-radius: 15px;
         background-color: lightgreen;
         display: flex;
         justify-content: center;
