@@ -4,7 +4,7 @@
 /*VARIABLES-------------------------*/
 :root {
     --small-screen: 200px;
-    --medium-screen: 300px;
+    --medium-screen: 350px;
     --large-screen: 500px;
 }
 
@@ -23,8 +23,8 @@ html {
 
 @media only screen and (max-width: 2000px) {
     html {
-        width: 4040px;
-        height: 4040px;
+        width: 4690px;
+        height: 4690px;
     }
 }
 
@@ -394,11 +394,56 @@ a:link {
 .nine_one {}
 .nine_two {}
 .nine_three {}
-.nine_four {}
-.nine_five {}
-.nine_six {}
-.nine_seven {}
-.nine_eight {}
+.nine_four_five {
+    grid-column: 9;
+    grid-row: 4 / span 2;
+    height: 100%;
+}
+/*SUBGRID*/
+.nine_six_seven_eight {
+    grid-column: 9;
+    grid-row: 6 / span 3;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.nine_six_seven_eight_sub_one {
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+}
+.nine_six_seven_eight_sub_two {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    border-radius: 15px;
+}
+.nine_six_seven_eight_sub_three {
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+}
+.nine_six_seven_eight_sub_four {
+    grid-column: 2;
+    grid-row: 3;
+    width: 100%;
+}
+.nine_six_seven_eight_sub_five {
+    grid-column: 1 / span 2;
+    grid-row: 4 / span 2;
+    width: 100%;
+    border-radius: 15px;
+}
+.nine_six_seven_eight_spacer {
+    grid-column: 1 / span 2;
+    grid-row: 6;
+    height: 100%;
+    width: 100%;
+}
+
+/*SUBGRID END*/
 .nine_nine {}
 .nine_ten {
     grid-column: 9;
@@ -417,13 +462,29 @@ a:link {
 
 .ten_one {}
 .ten_two {}
-.ten_three {}
-.ten_four {}
-.ten_five {}
-.ten_six {}
-.ten_seven {}
-.ten_eight {}
-.ten_nine {}
+.ten_three_four_five_six {
+    grid-column: 10;
+    grid-row: 3 / span 4;
+    width: 100%;
+    border-radius: 15px;
+    align-self: flex-end;
+}
+.ten_seven {
+    grid-column: 10;
+    grid-row: 7;
+    width: 50%;
+    border-radius: 15px;
+}
+.ten_eight_nine {
+    grid-column: 10;
+    grid-row: 8 / span 2;
+    width: 100%;
+    border-radius: 15px;
+    border: solid;
+    border-width: 1px;
+    border-color: lightgrey;
+    align-self: flex-end;
+}
 .ten_ten {
     grid-column: 10;
     grid-row: 10;
@@ -444,7 +505,11 @@ a:link {
 .eleven_four {}
 .eleven_five {}
 .eleven_six {}
-.eleven_seven {}
+.eleven_seven {
+    grid-column: 11;
+    grid-row: 7;
+    height: 100%;
+}
 .eleven_eight {}
 .eleven_nine {}
 .eleven_ten {}
