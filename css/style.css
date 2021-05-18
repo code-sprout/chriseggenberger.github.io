@@ -6,6 +6,7 @@
     --small-screen: 200px;
     --medium-screen: 350px;
     --large-screen: 500px;
+    --grid-gap: 10px;
 }
 
 /*PAGE SETUP-------------------------*/
@@ -16,8 +17,8 @@ html {
 
 @media only screen and (max-width: 1000px) {
     html {
-        width: 2720px;
-        height: 2720px;
+        width: 2730px;
+        height: 2730px;
     }
 }
 
@@ -72,8 +73,8 @@ a:link {
     display: grid;
     grid-template-columns: repeat(13, var(--medium-screen));
     grid-template-rows: repeat(13, var(--medium-screen));
-    column-gap: 10px;
-    row-gap: 10px;
+    column-gap: var(--grid-gap);
+    row-gap: var(--grid-gap);
 }
 
 @media only screen and (max-width: 1000px) {
@@ -81,8 +82,8 @@ a:link {
         display: grid;
         grid-template-columns: repeat(13, var(--small-screen));
         grid-template-rows: repeat(13, var(--small-screen));
-        column-gap: 10px;
-        row-gap: 10px;
+        column-gap: -var(--grid-gap);
+        row-gap: var(--grid-gap);
     }
 }
 
@@ -161,11 +162,33 @@ a:link {
     height: 100%;
     border-radius: 10px;
 }
-.three_eight {}
-.three_nine {}
-.three_ten {}
-.three_eleven {}
-.three_twelve {}
+/*SUBGRID*/
+.three_eight_twelve {
+    grid-column: 3;
+    grid-row: 8 / span 5;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+}
+.three_eight_twelve_sub_one {
+    border-radius: 15px;
+    width: 100%;
+}
+.three_eight_twelve_sub_two {
+    border-radius: 15px;
+    width: 100%;
+}
+.three_eight_twelve_sub_three {
+    border-radius: 15px;
+    width: 100%;
+}
+.three_eight_twelve_sub_four {
+    border-radius: 15px;
+    width: 100%;
+}
+/*SUBGRID END*/
 .three_thirteen {}
 
 
@@ -181,7 +204,11 @@ a:link {
     height: 100%;
     border-radius: 10px;
 }
-.four_seven {}
+.four_five_seven {
+    grid-column: 4 / span 2;
+    grid-row: 7;
+    width: 100%;
+}
 .four_eight {}
 .four_nine {}
 .four_ten {}
@@ -233,7 +260,6 @@ a:link {
     grid-column: 4 / span 2;
     grid-row: 7;
     width: 100%;
-    height: auto;
 }
 .seven_six {}
 .center {
