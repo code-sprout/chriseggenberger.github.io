@@ -14,7 +14,7 @@ html {
     height: 2740px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1250px) {
     html {
         width: 2740px;
         height: 2740px;
@@ -90,7 +90,7 @@ a:link {
     row-gap: 10px;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1250px) {
    .main-grid {
         display: grid;
         grid-template-columns: repeat(13, var(--small-screen));
