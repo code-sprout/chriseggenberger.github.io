@@ -360,15 +360,14 @@ a:link {
     grid-row: 10;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: auto auto;
+    grid-template-rows: 1fr 1fr;
     column-gap: 10px;
     row-gap: 10px;
-    width: 100%;
 }
 .eight_ten_sub_one {
     grid-column: 1;
     grid-row: 1 / span 2;
-    width: 100%
+    width: 100%;
 }
 .eight_ten_sub_two {
     grid-column: 1;
