@@ -14,6 +14,7 @@ html {
     height: 2740px;
 }
 
+/*
 @media only screen and (max-width: 1250px) {
     html {
         width: 2740px;
@@ -34,7 +35,7 @@ html {
         height: 6620px; 
     }
 }
-
+*/
 
 /*STYLING----------------------------*/
 a:link {
@@ -45,22 +46,25 @@ a:link {
 
 /*HOME BUTTON-------------------------*/
 .home {
-    width: 60px;
-    height: 60px;
+    width: 5vw;
+    height: 5vw;
     border-radius: 20%;
     background-color: lightgreen;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 25px;
-    margin-top: 25px;
-    color: white;
+    margin-left: 2vw;
+    margin-top: 2vw;
     box-shadow: 0 0 8px gray;
-    font-size: 40px;
     position: fixed;
-    font-family: 'Source Code Pro', monospace;
 } 
 
+.home_button {
+    width: 80%;
+    height: 80%;
+}
+
+/*
 @media only screen and (max-width: 2000px) {
     .home {
         width: 50px;
@@ -79,7 +83,7 @@ a:link {
         font-family: 'Source Code Pro', monospace;
     } 
 }
-
+*/
 
 /*MAIN GRID FORMATTING---------------*/
 .main-grid {
@@ -89,7 +93,7 @@ a:link {
     column-gap: 10px;
     row-gap: 10px;
 }
-
+/*
 @media only screen and (max-width: 1250px) {
    .main-grid {
         display: grid;
@@ -119,7 +123,7 @@ a:link {
         row-gap: 10px;
     }
 }
-
+*/
 
 /*GRID FORMATTING--------------------*/
 .one_one {}
