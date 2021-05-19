@@ -690,6 +690,7 @@ p {
     grid-row: 9;
     width: 80%;
     height: 100%;
+    max-width: 90vw;
 }
 .nine_ten {
     grid-column: 9;
@@ -780,6 +781,7 @@ p {
     row-gap: 10px;
     width: 100%;
     height: 100%;
+    max-width: 90vw;
 }
 .eleven_six_sub_one {
     grid-column: 1 / span 2;
