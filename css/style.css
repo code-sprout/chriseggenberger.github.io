@@ -70,8 +70,8 @@ p {
 } 
 
 .home_button {
-    width: 80%;
-    height: 80%;
+    width: 70%;
+    height: 70%;
 }
 
 
@@ -448,7 +448,7 @@ p {
     grid-column: 7;
     grid-row: 2 / span 3;
     display: flex;
-    align-self: center;
+    align-self: flex-end;
     justify-self: center;
     width: 100%;
     border-radius: 15px;
