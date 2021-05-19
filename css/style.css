@@ -43,6 +43,15 @@ a:link {
     text-decoration: none;
 }
 
+h1 {
+    font-family: 'Source Code Pro', monospace;
+}
+
+p {
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 300;
+}
+
 
 /*HOME BUTTON-------------------------*/
 .home {
@@ -57,6 +66,7 @@ a:link {
     margin-top: 25px;
     box-shadow: 0 0 8px gray;
     position: fixed;
+    z-index: 1;
 } 
 
 .home_button {
@@ -459,12 +469,14 @@ a:link {
     justify-content: center;
     align-items: center;
 }
+/*
 .center_image {
     width: 100%;
     height: 100%;
-    opacity: 0.1;
+    opacity: 0.0;
     position: absolute;
 }
+*/
 .center_heading {
 
 }
