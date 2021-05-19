@@ -12,6 +12,7 @@
 html {
     width: 2740px;
     height: 2740px;
+    cursor: grab;
 }
 
 
@@ -353,7 +354,26 @@ p {
     grid-row: 7;
     width: 100%;
 }
-.four_eight {}
+/*SUBGRID*/
+.four_seven_eight {
+    grid-column: 4 / span 2;
+    grid-row: 7;
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto 1fr;
+}
+.four_seven_eight_sub_one {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    width: 100%;
+}
+/*SUBGRID END*/
+.four_eight {
+    grid-column: 4;
+    grid-row: 8;
+}
 .four_nine {}
 .four_ten {
     grid-column: 4 / span 2;
@@ -373,7 +393,23 @@ p {
     grid-row: 3;
     width: 100%;
 }
-.five_four {}
+/*SUBGRID*/
+.five_four {
+    grid-column: 5;
+    grid-row: 4;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+.five_four_sub_one {
+    grid-column: 1 / span 2;
+    grid-row: 2;
+}
+/*SUBGRID END*/
 /*SUBGRID*/
 .five_five {
     grid-column: 5;
@@ -477,8 +513,12 @@ p {
     position: absolute;
 }
 */
-.center_heading {
+.center_h1 {
 
+}
+.center_p {
+    max-width: 90vw;
+    text-align: center;
 }
 .seven_eight {}
 .seven_nine {
@@ -515,7 +555,10 @@ p {
     align-self: center;
     height: 100%;
 }
-.eight_four {}
+.eight_four {
+    grid-column: 8;
+    grid-row: 4;
+}
 .eight_five {}
 .eight_six {}
 .eight_seven {}
@@ -616,7 +659,12 @@ p {
 }
 
 /*SUBGRID END*/
-.nine_nine {}
+.nine_nine {
+    grid-column: 9;
+    grid-row: 9;
+    width: 80%;
+    height: 100%;
+}
 .nine_ten {
     grid-column: 9;
     grid-row: 10;
@@ -641,12 +689,31 @@ p {
     border-radius: 15px;
     align-self: flex-end;
 }
+/*SUBGRID*/
 .ten_seven {
     grid-column: 10;
     grid-row: 7;
-    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+.ten_seven_sub_one {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+}
+.ten_seven_sub_two {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
     border-radius: 15px;
 }
+/*SUBGRID END*/
 .ten_eight_nine {
     grid-column: 10;
     grid-row: 8 / span 2;
