@@ -1,5 +1,5 @@
 /*IMPORTS----------------------------*/
-@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,900&display=swap');
 
 /*VARIABLES-------------------------*/
 :root {
@@ -43,6 +43,7 @@ html {
 /*STYLING----------------------------*/
 h1 {
     font-family: 'Source Code Pro', monospace;
+    font-size: 1.5em;
 }
 
 p {
@@ -59,8 +60,8 @@ p {
 .home {
         margin-top: 15px;
         margin-left: 15px;
-        width: 50px;
-        height: 50px;
+        width: 60px;
+        height: 60px;
         border-radius: 20%;
         background-color: lightgreen;
         display: flex;
@@ -371,6 +372,7 @@ p {
 }
 /*SUBGRID END*/
 .four_eight {
+    max-width: 90vw;
     grid-column: 4;
     grid-row: 8;
 }
@@ -406,6 +408,7 @@ p {
     height: 100%;
 }
 .five_four_sub_one {
+    max-width: 90vw;
     grid-column: 1 / span 2;
     grid-row: 2;
 }
@@ -522,9 +525,25 @@ p {
 
 }
 .center_p {
-    max-width: 90vw;
     text-align: center;
+    max-width: 90vw;
 }
+.social{
+    display: flex;
+
+}
+.youtube_link {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+}
+.email_link {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+    margin-left: 25px;
+}
+
 /*CENTER CONTENT END*/
 .seven_eight {}
 .seven_nine {
@@ -562,6 +581,7 @@ p {
     height: 100%;
 }
 .eight_four {
+    max-width: 90vw;
     grid-column: 8;
     grid-row: 4;
 }
@@ -708,10 +728,10 @@ p {
     height: 100%;
 }
 .ten_seven_sub_one {
-    grid-column: 1 / span 2;
-    grid-row: 1;
+    grid-column: 1;
+    grid-row: 2;
     width: 100%;
-    height: 100%;
+    border-radius: 15px;
 }
 .ten_seven_sub_two {
     grid-column: 1;
@@ -749,7 +769,31 @@ p {
 .eleven_three {}
 .eleven_four {}
 .eleven_five {}
-.eleven_six {}
+/*SUBGRID*/
+.eleven_six {
+    grid-column: 11;
+    grid-row: 6;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+.eleven_six_sub_one {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+    width: 100%;
+    height: 100%;
+}
+.eleven_six_sub_two {
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    border-radius: 15px;
+}
+/*SUBGRID END*/
 .eleven_seven {
     grid-column: 11;
     grid-row: 7;
