@@ -12,38 +12,16 @@
 html {
     margin: 0;
     padding: 0;
-    width: 2740px;
-    height: 2740px;
+    width: 4690px;
+    height: 4690px;
     cursor: grab;
-}
-
-
-@media only screen and (max-width: 1250px) {
-    html {
-        width: 2740px;
-        height: 2740px;
-    }
-}
-
-@media only screen and (max-width: 2000px) {
-    html {
-        width: 4690px;
-        height: 4690px;
-    }
-}
-
-@media only screen and (min-width: 2001px) {
-    html {
-        width: 6620px;
-        height: 6620px; 
-    }
 }
 
 
 /*STYLING----------------------------*/
 h1 {
     font-family: 'Source Code Pro', monospace;
-    font-size: 1.5em;
+    font-size: 1.25em;
 }
 
 p {
@@ -58,10 +36,10 @@ p {
 }
 
 .home {
-        margin-top: 15px;
-        margin-left: 15px;
-        width: 60px;
-        height: 60px;
+        margin-top: 10px;
+        margin-left: 10px;
+        width: 50px;
+        height: 50px;
         border-radius: 20%;
         background-color: lightgreen;
         display: flex;
@@ -78,62 +56,14 @@ p {
     height: 70%;
 }
 
-@media only screen and (max-width: 1250px) {
-    .home {
-        margin-top: 10px;
-        margin-left: 10px;
-        width: 50px;
-        height: 50px;
-        border-radius: 20%;
-        background-color: lightgreen;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        box-shadow: 0 0 8px gray;
-        font-size: 40px;
-        position: fixed;
-    } 
-}
-
 
 /*MAIN GRID FORMATTING---------------*/
 .main-grid {
     display: grid;
-    grid-template-columns: repeat(13, var(--small-screen));
-    grid-template-rows: repeat(13, var(--small-screen));
+    grid-template-columns: repeat(13, var(--medium-screen));
+    grid-template-rows: repeat(13, var(--medium-screen));
     column-gap: 10px;
     row-gap: 10px;
-}
-
-@media only screen and (max-width: 1750px) {
-   .main-grid {
-        display: grid;
-        grid-template-columns: repeat(13, var(--small-screen));
-        grid-template-rows: repeat(13, var(--small-screen));
-        column-gap: 10px;
-        row-gap: 10px;
-    }
-}
-
-@media only screen and (max-width: 2000px) {
-   .main-grid {
-        display: grid;
-        grid-template-columns: repeat(13, var(--medium-screen));
-        grid-template-rows: repeat(13, var(--medium-screen));
-        column-gap: 10px;
-        row-gap: 10px;
-    }
-}
-
-@media only screen and (min-width: 2001px) {
-   .main-grid {
-        display: grid;
-        grid-template-columns: repeat(13, var(--large-screen));
-        grid-template-rows: repeat(13, var(--large-screen));
-        column-gap: 10px;
-        row-gap: 10px;
-    }
 }
 
 
