@@ -21,7 +21,7 @@ html {
 /*STYLING----------------------------*/
 h1 {
     font-family: 'Source Code Pro', monospace;
-    font-size: 1.25em;
+    font-size: 1.5em;
 }
 
 p {
@@ -444,7 +444,7 @@ p {
     height: 150px;
 }
 .center_h1 {
-
+    margin-bottom: -5px;
 }
 .center_p {
     text-align: center;
